@@ -4,7 +4,10 @@ int main()
 	int i = 0;
 	while(i<10)
 	{
-		printf("%x %d %d\n",&i,i,i*i);
-		i=i+1;
+		if(i%2==0)
+		{
+			printf("%x %d %d\n",&i,i,i*i);
+			i=i+1;
+		}
 	}
 }
